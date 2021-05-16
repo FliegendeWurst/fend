@@ -5289,3 +5289,8 @@ fn day_of_week_type_name() {
 fn phi() {
     test_eval("phi", "approx. 1.6180339886");
 }
+
+#[test]
+fn proper_unit_priority() {
+    test_eval_simple("50 meters / 5 seconds", "10 meters / second");
+}
