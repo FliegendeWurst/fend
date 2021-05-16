@@ -5181,3 +5181,8 @@ fn not_simplify_explicit_to() {
         "489.296375410515266426112 ms / year",
     );
 }
+
+#[test]
+fn proper_unit_priority() {
+    test_eval_simple("50 meters / 5 seconds", "10 meters / second");
+}
